@@ -8,7 +8,7 @@ Goal of this project is to establish a CI/CD pipeline for Social Network microse
 High level Goals of this project are:
 
 * Develop a CI/CD pipelines using Jenkin, AWS and Docker
-* Develop a dashboard using Datadog APM and Jaeger to monitor microservices, CI/CD
+* Create a dashboard using Datadog APM and Jaeger to monitor microservices, CI/CD
 * Write test cases for the existing Social Network Microservices using Datadog Synthetic Monitoring.
 
 
@@ -35,16 +35,16 @@ Solution Architecture
 
 1. CI/CD Pipeline:
 
-  * We'll be using Jenkins for automated CI/CD pipeline for our Social Network Microservices application.The application will be hosted on AWS EC2 instance.
-  There will be two stages for deployment, Developer and Production. Once the changes pass successfully the tests for the Developer stage, these changes are then         deployed to Production. Currently we'll be using AWS EC2's internal instance management but if time permits we will use Kubernetes for the same.
+  * We'll be using Jenkins for automating the CI/CD pipeline for our Social Network Microservices application. The application will be hosted on AWS EC2 instance.
+  There will be two stages for deployment, Developer and Production. Once the changes successfully pass the tests for the Developer stage, they will be deployed to Production. Initially we'll be using AWS EC2's internal instance management but if time permits we will use Kubernetes for the same.
   
   * We'll be writing a Dockerfile for building the Social Network microservices image. 
 
 2. For Ingesting data to datadog for monitoring the application:
 Background about the current implementation:
-In the current setup we have jaeger which helps in monitoring and tracing data, logs.
+In the current setup we have Jaeger which helps in monitoring and tracing data, logs.
 
-Some important terms in the context :
+Some important terms in the context:
 
 * SPAN:
 
@@ -54,13 +54,13 @@ A span represents a logical unit of work in Jaeger that has an operation name, t
 
 A trace is a data/execution path through the system, and can be thought of as a directed acyclic graph of spans.
 
-In our current setup the jaeger agent is present at each container level which collects data packets and send this data to jaeger collector.
-The data is then send from the jaeger collector to the Cassandra database.
+In our current setup the Jaeger agent is present at each container level which collects data packets and send this data to Jaeger collector.
+The data is then send from the Jaeger collector to the Cassandra database.
 
 ![image](https://user-images.githubusercontent.com/55074591/134711163-414eb5bb-a3f6-4147-b953-3763816f91a2.png)
 
 * Our solution:
-For exporting the logging, trace data into Datadog APM we need to ingest the data using opentelementary traces with collector.There are couple of ways to accomplish this. But we will be needing the OpenTelementary collector as it provides support to various sdks and jaeger is deprecated. The Open telementary collector will use the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to accomplish the same.
+For exporting the logging, trace data into Datadog APM we need to ingest the data using opentelementary traces with collector.There are couple of ways to accomplish this. But we will be needing the OpenTelementary collector as it provides support to various SDKs and Jaeger is deprecated. The Open telementary collector will use the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to accomplish the same.
 
 https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter
 
@@ -83,4 +83,3 @@ Release #1 (due by Week 5):
 * POC on how to get data from Jaeger to Datadog.
 * POC on which tool to use for CI/CD and how to use it.
 * Exploring the exisiting Social Network Application and deciding on atleast two microservices to be used in the project.
-
