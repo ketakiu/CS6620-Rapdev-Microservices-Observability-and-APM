@@ -33,12 +33,12 @@ Social Network Application
 Solution Architecture
 ![alt text](https://github.com/ketakiu/CS6620-Rapdev-Microservices-Observability-and-APM/blob/main/Architecture.jpeg?raw=true)
 
-1. CICD:
+1. CI/CD Pipeline:
 
-  We'll be using Jenkins for automated CI/CD pipeline for our Social Network Microservices application.The application will be hosted on AWS EC2 instance.
+  * We'll be using Jenkins for automated CI/CD pipeline for our Social Network Microservices application.The application will be hosted on AWS EC2 instance.
   There will be two stages for deployment, Developer and Production. Once the changes pass successfully the tests for the Developer stage, these changes are the         deployed to Production. Currently we'll be using AWS EC2's internal instance management but if time permits we will use Kubernetes for the same.
   
-  We'll be writing a Dockerfile for building the Social Network microservices image. 
+  * We'll be writing a Dockerfile for building the Social Network microservices image. 
 
 2. For Ingesting data to datadog for monitoring the application:
 Background about the current implementation:
@@ -46,11 +46,11 @@ In the current setup we have jaeger which helps in monitoring and tracing data, 
 
 Some important terms in the context :
 
-SPAN:
+* SPAN:
 
 A span represents a logical unit of work in Jaeger that has an operation name, the start time of the operation, and the duration. Spans may be nested and ordered to model causal relationships
 
-TRACE: 
+* TRACE: 
 
 A trace is a data/execution path through the system, and can be thought of as a directed acyclic graph of spans.
 
@@ -59,7 +59,7 @@ The data is then send from the jaeger collector to the Cassandra database.
 
 ![image](https://user-images.githubusercontent.com/55074591/134711163-414eb5bb-a3f6-4147-b953-3763816f91a2.png)
 
-Our solution:
+* Our solution:
 For exporting the logging, trace data into Datadog APM we need to ingest the data using opentelementary traces with collector.There are couple of ways to accomplish this. But we will be needing the OpenTelementary collector as it provides support to various sdks and jaeger is deprecated. The Open telementary collector will use the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to accomplish the same.
 
 https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter
