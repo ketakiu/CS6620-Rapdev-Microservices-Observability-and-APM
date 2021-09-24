@@ -65,16 +65,16 @@ For exporting the logging, trace data into Datadog APM we need to ingest the dat
 https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter
 
 3. DataDog Dashboard:
-We will be creating dashboard to monitor the application. We havent yet decided what it will be showing. But will try to give an over about the application health.
+We will be creating a dashboard to monitor the application. We haven't yet decided what it will be displaying. But will try to give an overview about the application's health.
 
 ## 5. Acceptance criteria
 
 * Application with atleast two microservices
-* Well working CI/CD pipeline configured using Terraform.
-* Code committed to the repo should test, build, and deploy
+* Well working CI/CD pipeline configured using Terraform
+* Code committed to the repo should be tested, built, and deployed
 * Should include end to end testing either using Datadog Synthetic tests, or Selenium
 * Using terraform, ingesting OpenTelemetry traces with the collector
-* Create monitoring dashboard in Datadog.
+* Create a monitoring dashboard in Datadog
 
 ## 6. Release Planning
 
