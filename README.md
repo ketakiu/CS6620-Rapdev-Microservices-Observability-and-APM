@@ -29,6 +29,8 @@ Social Network Application
 
 
 ## 4. Solution Concept
+
+*Solution Architecture*
 ![alt text](https://github.com/ketakiu/CS6620-Rapdev-Microservices-Observability-and-APM/blob/main/Architecture.jpeg?raw=true)
 
 1. CICD 
