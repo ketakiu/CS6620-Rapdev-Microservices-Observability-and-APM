@@ -33,9 +33,10 @@ Social Network Application
 Solution Architecture
 ![alt text](https://github.com/ketakiu/CS6620-Rapdev-Microservices-Observability-and-APM/blob/main/Architecture.jpeg?raw=true)
 
-1. CICD 
+1. CICD:
+
   We'll be using Jenkins for automated CI/CD pipeline for our Social Network Microservices application.The application will be hosted on AWS EC2 instance.
-  There will be two stages for deployment, Developer and Production. Once the changes pass successfully the tests for the Developer stage, these changes are then   deployed to Production. Currently we'll be using AWS EC2's internal instance management but if time permits we will use Kubernetes for the same.
+  There will be two stages for deployment, Developer and Production. Once the changes pass successfully the tests for the Developer stage, these changes are the         deployed to Production. Currently we'll be using AWS EC2's internal instance management but if time permits we will use Kubernetes for the same.
   
   We'll be writing a Dockerfile for building the Social Network microservices image. 
 
