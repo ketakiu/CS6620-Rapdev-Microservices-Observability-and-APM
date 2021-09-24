@@ -30,6 +30,35 @@ Social Network Application
 
 ## 4. Solution Concept
 
+1. CICD 
+
+
+2. For Ingesting data to datadog for monitoring the application:
+Background about the current implementation:
+In the current setup we have jaeger which helps in monitoring and tracing data, logs.
+
+Some important terms in the context :
+
+SPAN:
+
+A span represents a logical unit of work in Jaeger that has an operation name, the start time of the operation, and the duration. Spans may be nested and ordered to model causal relationships
+
+TRACE: 
+
+A trace is a data/execution path through the system, and can be thought of as a directed acyclic graph of spans.
+
+In our current setup the jaeger agent is present at each container level which collects data packets and send this data to jaeger collector.
+The data is then send from the jaeger collector to the Cassandra database.
+
+![image](https://user-images.githubusercontent.com/55074591/134711163-414eb5bb-a3f6-4147-b953-3763816f91a2.png)
+
+Our solution:
+For exporting the logging, trace data into Datadog APM we need to ingest the data using opentelementary traces with collector.There are couple of ways to accomplish this. But we will be needing the OpenTelementary collector as it provides support to various sdks and jaeger is deprecated. The Open telementary collector will use the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to accomplish the same.
+
+https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter
+
+3. DataDog Dashboard:
+We will be creating dashboard to monitor the application. We havent yet decided what it will be showing. But will try to give an over about the application health.
 
 ## 5. Acceptance criteria
 
