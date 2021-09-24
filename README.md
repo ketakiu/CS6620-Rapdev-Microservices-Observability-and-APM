@@ -3,11 +3,11 @@
 ** **
 ## 1. Vision and Goals Of The Project:
 
-Goal of this project is to establish a CI/CD pipeline for Social Network microservice application which automates testing , integration, deployment, and delivery.
+Goal of this project is to establish a CI/CD pipeline for Social Network microservice application which automates testing, integration, deployment, and delivery.
 High level Goals of this project are:
 * Monitoring microservices, CI/CD, and develop a dashboard using Datadog APM and Jaeger
 
-* Write test cases for the exisiting Social Network Microservices using Datadog Synthetic Monitoring.
+* Write test cases for the existing Social Network Microservices using Datadog Synthetic Monitoring.
 
 
 ## 2. Users/Personas Of The Project
