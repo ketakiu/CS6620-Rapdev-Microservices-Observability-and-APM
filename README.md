@@ -25,7 +25,7 @@ Social Network Application
 
 * The scope of the project includes exploring the CI/CD services, hosting options and deploying the Social networking application.
 * We plan to implement the pipeline which automates the testing, build phase in the pipeline.
-* We will be Monitoring the Social networking application which will include diving deep into DataDog APM. The existing code contains jaeger which acts like a dashboard contains the log data. We aim to export this data into DataDog and create dashboard for monitoring the micro services, overall application health check, CI/CD and perform tests.
+* We will be Monitoring the Social networking application which will include diving deep into DataDog APM. The existing code contains jaeger which acts like a dashboard contains the log data. We aim to export this data into DataDog and create a dashboard for monitoring the microservices, overall application health check, CI/CD and perform tests.
 
 
 ## 4. Solution Concept
@@ -77,8 +77,6 @@ We will be creating dashboard to monitor the application. We havent yet decided 
 * Create monitoring dashboard in Datadog.
 
 ## 6. Release Planning
-
-Detailed user stories and plans are on the Trello board: https://trello.com/b/4EbylOXI/example-trello-board-for-moc-ui
 
 Release #1 (due by Week 5): 
 
