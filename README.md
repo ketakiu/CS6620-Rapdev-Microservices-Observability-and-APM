@@ -4,19 +4,19 @@
 ## 1. Vision and Goals Of The Project:
 
 Goal of this project is to establish a CI/CD pipeline for Social Network microservice application which automates testing, integration, deployment, and delivery.
-High level Goals of this project are:
-* Monitoring microservices, CI/CD, and develop a dashboard using Datadog APM and Jaeger
 
+High level Goals of this project are:
+
+* Develop a CI/CD pipelines using Jenkin, AWS and Docker
+* Develop a dashboard using Datadog APM and Jaeger to monitor microservices, CI/CD
 * Write test cases for the existing Social Network Microservices using Datadog Synthetic Monitoring.
 
 
 ## 2. Users/Personas Of The Project
 
-Social Network-monitoring module will be used by the administrators of cloud services, DEV-ops engineers, network engineers including researchers from BU, NU, MIT, HU and UMass, MGHPCC contributing companies, Commonwealth companies and government institutions, and paying users. 
+Social Network-monitoring module will be used by the administrators of cloud services, DevOps engineers, network engineers including researchers from BU, NU, MIT, HU and UMass, MGHPCC contributing companies, Commonwealth companies and government institutions, and paying users. 
 
-It does not target:
-
-* End users using the Social Network application.
+It does not target end users of the Social Network application.
 
 
 ## 3. Scope and Features Of The Project:
@@ -24,8 +24,8 @@ It does not target:
 Social Network Application 
 
 * The scope of the project includes exploring the CI/CD services, hosting options and deploying the Social networking application.
-* We plan to implement the pipeline which automates the testing, build phase in the pipeline.
-* We will be Monitoring the Social networking application which will include diving deep into DataDog APM. The existing code contains jaeger which acts like a dashboard contains the log data. We aim to export this data into DataDog and create a dashboard for monitoring the microservices, overall application health check, CI/CD and perform tests.
+* We plan to implement a pipeline which automates the testing, build, and deployment phase.
+* We will be monitoring the Social Networking application which will include diving deep into DataDog APM. The existing code contains Jaeger which acts like a dashboard contains the log data. We aim to export this data into DataDog and create a dashboard for monitoring the microservices, overall application health check, CI/CD and perform tests.
 
 
 ## 4. Solution Concept
