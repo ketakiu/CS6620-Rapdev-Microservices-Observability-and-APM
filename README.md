@@ -16,9 +16,7 @@ High level Goals of this project are:
 ## 2. Users/Personas Of The Project
 
 Social Network-monitoring module will be used by the administrators of cloud services, DevOps engineers, network
-engineers including researchers from BU, NU, MIT, HU and UMass, MGHPCC contributing companies, Commonwealth companies
-and government institutions, and paying users.
-
+engineers.
 It does not target end users of the Social Network application.
 
 ## 3. Scope and Features Of The Project:
