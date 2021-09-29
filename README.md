@@ -21,14 +21,19 @@ It does not target end users of the Social Network application.
 
 ## 3. Scope and Features Of The Project:
 
-Social Network Application
+Scope:
 
-* The scope of the project includes exploring the CI/CD services, hosting options and deploying the Social networking
-  application.
-* We plan to implement a pipeline which automates the testing, build, and deployment phase.
-* We will be monitoring the Social Networking application which will include diving deep into DataDog APM. The existing
-  code contains Jaeger which acts like a dashboard contains the log data. We aim to export this data into DataDog and
-  create a dashboard for monitoring the microservices, overall application health check, CI/CD and perform tests.
+In this project we will be social networking application. Our majors goals will be identifying the CICD options, hosting options for the containerized microservices in social networking application. 
+In addition to this we will be working with Datadog APM to setup the monitoring for the microservices and creating Dashboard in Datadog.
+We will be also doing synthetic testing using DataDog.
+
+Feature/ Outcomes:
+
+1. Setup a CI/CD pipeline which automates the testing, building, and deployment phase.
+2. Setup monitoring in Datadog for the microservices.
+3. Create monitoring dashboards in Datadog.
+4. Write synthetic test in datadog.
+
 
 ## 4. Solution Concept
 
