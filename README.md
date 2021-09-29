@@ -97,6 +97,6 @@ Social Network Application
 
 Release #1 (due by Week 5):
 
-* POC on how to get data from Jaeger to Datadog.
+* POC on how to get export data using opentelementary collector to Datadog.
 * POC on which tool to use for CI/CD and how to use it.
 * Exploring the existing Social Network Application and deciding on atleast two microservices to be used in the project.
