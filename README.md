@@ -90,7 +90,7 @@ Social Network Application
 * Well working CI/CD pipeline configured using Terraform
 * Code committed to the repo should be tested, built, and deployed
 * Should include end-to-end testing either using Datadog Synthetic tests, or Selenium
-* Using terraform, ingesting OpenTelemetry traces with the collector
+* Ingesting OpenTelemetry traces with the collector into Datadog APM.
 * Create a monitoring dashboard in Datadog
 
 ## 6. Release Planning
