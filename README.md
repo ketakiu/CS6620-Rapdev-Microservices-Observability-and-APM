@@ -82,7 +82,7 @@ We will be also doing synthetic testing using DataDog.
       accomplish the same.
 
       * [Datadog Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter)
-      * [Ingesting opentelementary collector datadog exporter](https://docs.datadoghq.com/tracing/setup_overview/open_standards/)
+      * [Ingesting opentelemetry collector datadog exporter](https://docs.datadoghq.com/tracing/setup_overview/open_standards/)
 
 3. DataDog Dashboard:
 
