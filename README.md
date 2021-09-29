@@ -23,7 +23,8 @@ It does not target end users of the Social Network application.
 
 ### Scope:
 
-In this project we will be social networking application. Our majors goals will be identifying the CICD options, hosting options for the containerized microservices in social networking application. 
+In this project we will be social networking application. 
+Our majors goals will be identifying the CICD options, hosting options for the containerized microservices in social networking application. 
 In addition to this we will be working with Datadog APM to setup the monitoring for the microservices and creating Dashboard in Datadog.
 We will be also doing synthetic testing using DataDog.
 
