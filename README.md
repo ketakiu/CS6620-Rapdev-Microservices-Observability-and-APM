@@ -21,13 +21,13 @@ It does not target end users of the Social Network application.
 
 ## 3. Scope and Features Of The Project:
 
-Scope:
+### Scope:
 
 In this project we will be social networking application. Our majors goals will be identifying the CICD options, hosting options for the containerized microservices in social networking application. 
 In addition to this we will be working with Datadog APM to setup the monitoring for the microservices and creating Dashboard in Datadog.
 We will be also doing synthetic testing using DataDog.
 
-Feature/ Outcomes:
+### Feature/ Outcomes:
 
 1. Setup a CI/CD pipeline which automates the testing, building, and deployment phase.
 2. Setup monitoring in Datadog for the microservices.
