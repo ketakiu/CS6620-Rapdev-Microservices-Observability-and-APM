@@ -77,7 +77,7 @@ Social Network Application
       accomplish the same.
 
       [Datadog Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter)
-      [Ingesting opentelemnatry data using datadog exporter] [https://docs.datadoghq.com/tracing/setup_overview/open_standards/]
+      [Ingesting opentelemnatry data using datadog exporter] (https://docs.datadoghq.com/tracing/setup_overview/open_standards/)
 
 3. DataDog Dashboard:
 
