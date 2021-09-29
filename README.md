@@ -9,8 +9,9 @@ testing, integration, deployment, and delivery.
 
 High level Goals of this project are:
 
-* Develop a CI/CD pipelines using Jenkins, AWS and Docker
-* Create a dashboard using Datadog APM and OpenTelemetry, datadog exporter to monitor microservices, CI/CD
+* Develop a CI/CD pipelines using Jenkins, AWS and Docker.
+* Setup monitoring of microservices using opentelemetry collector and datadog exporter.
+* Create monitoring dashboard in datadog.
 * Write test cases for the existing Social Network Microservices using Datadog Synthetic Monitoring.
 
 ## 2. Users/Personas Of The Project
