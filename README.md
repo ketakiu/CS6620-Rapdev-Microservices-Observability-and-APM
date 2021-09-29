@@ -76,8 +76,8 @@ Social Network Application
       the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to
       accomplish the same.
 
-      [Datadog Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter)
-      [Ingesting opentelemnatry data using datadog exporter](https://docs.datadoghq.com/tracing/setup_overview/open_standards/)
+      * [Datadog Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/datadogexporter)
+      * [Ingesting opentelemnatry data using datadog exporter](https://docs.datadoghq.com/tracing/setup_overview/open_standards/)
 
 3. DataDog Dashboard:
 
