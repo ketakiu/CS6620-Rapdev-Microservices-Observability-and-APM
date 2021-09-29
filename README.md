@@ -10,7 +10,7 @@ testing, integration, deployment, and delivery.
 High level Goals of this project are:
 
 * Develop a CI/CD pipelines using Jenkins, AWS and Docker
-* Create a dashboard using Datadog APM and Jaeger to monitor microservices, CI/CD
+* Create a dashboard using Datadog APM and OpenTelementary, datadog exporter to monitor microservices, CI/CD
 * Write test cases for the existing Social Network Microservices using Datadog Synthetic Monitoring.
 
 ## 2. Users/Personas Of The Project
@@ -71,7 +71,7 @@ Social Network Application
     * Our Solution:
 
       For exporting the logging and tracing data into Datadog APM we need to ingest the data using OpenTelemetary traces
-      the with collector.There are couple of ways to accomplish this. But we will be needing the OpenTelemetary
+      the with collector. There are couple of ways to accomplish this. But we will be needing the OpenTelemetary
       collector as it provides support to various SDKs and Jaeger is deprecated. The OpenTelemetary collector will use
       the Datadog exporter to send the trace data to the Datadog APM. Below is an example that we will be following to
       accomplish the same.
