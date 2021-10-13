@@ -1,7 +1,6 @@
 ### Demo 2
 
 #### Link to the Demo 2
-
 https://www.youtube.com/watch?v=9MMhko6ApLs
 
 #### Questions for the quiz
